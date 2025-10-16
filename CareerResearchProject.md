@@ -188,7 +188,7 @@ both require knowledge of programming and database application
 
 
 #### Interesting Facts or Notes
-
+the amount of job openings is rather suprising
 
 
 
@@ -202,34 +202,34 @@ Create a quick comparison of the careers you researched:
 
 | Career Title | Starting Salary | Education Required | Most Important Skill | Job Growth |
 |-------------|-----------------|-------------------|---------------------|-----------|
-|title 1 |salary 1 |ed 1 |skill 1 | growth potential 1|
-|title 2|salary 2 |ed 2| skill 2 | growth potential 2|
-|title 3 |salary 3 |ed 3 |skill 3 | growth potential 3|
+|game designer |58k-105k/yr |highschool diploma |programming | 7% or higher|
+|computer system engineer|71k-132k/yr |Post-secondary certificate required| application of server software | 7% or higher|
+|computer systems analyist |69k-115k/yr |some collage |use data base management| 7% or higher|
 
 ### Team Discussion Questions (Fill in your answers)
 
 **1. Which career was most interesting to your team and why?**
-
+game designer because I like games
 
 
 
 **2. Which career seems like the best fit for someone who loves the programming/coding aspects of this class?**
-
+Game designer it involves the most coding
 
 
 
 **3. Which career seems like the best fit for someone who prefers working with data and analysis?**
-
+computer system analyist
 
 
 
 **4. What surprised you most about these careers?**
-
+the pay 
 
 
 
 **5. Based on your research, what additional skills or knowledge would be valuable to develop?**
-
+social/soft skills
 
 
 
@@ -238,9 +238,10 @@ Create a quick comparison of the careers you researched:
 ## Additional Comments
 
 **Time spent researching:** 
-
+2hrs
 
 **Most helpful resource:** 
-
+Onet
 
 **Questions you still have:**
+none
