@@ -1,8 +1,8 @@
 # Tech Careers Research Project
 
-**Team Members:**
+**Team Members:Tyler Farrell**
 
-**Date:** 
+**Date:10/26/25** 
 
 **Submission Guidelines:** Your team can work on this together but you all have to get a copy of it and push it to your GitHub repo, main folder/repo htmlCssJavaScript, in a subfolder you will call **"careerResearchProject"**.  This will be just a copy and filled out version of this markdown file.  You're just filling in the questions with your own added text. 
 
@@ -58,138 +58,137 @@ Choose **3** of the following careers to research in depth:
 
 Complete this section for each career you research. Copy and paste this template as needed.
 
-### Career #1:
+### Career #1:video game designers
 
 #### What They Do
-Describe the main responsibilities and daily tasks:
+create the main featrues and elements of new games as well as adding missions, items, rewards, and etc
 
 
 
 
 #### Required Education & Skills
-- **Minimum Education:** 
-- **Recommended Education:** 
-- **Key Technical Skills:** 
+- **Minimum Education:highschool diploma** 
+- **Recommended Education:bacholers degree** 
+- **Key Technical Skills:programming, time management, and systems analysis** 
 
 
-- **Important Soft Skills:** 
+- **Important Soft Skills:active listening, speaking, negotiating, and persuaion** 
 
 
 #### Salary Information
-- **Entry-Level Salary Range:** 
-- **Mid-Career Salary Range:** 
-- **Senior-Level Salary Range:** 
+- **Entry-Level Salary Range:58k-105k/yr** 
+- **Mid-Career Salary Range:74k-136k/yr** 
+- **Senior-Level Salary Range:97k-178k/yr** 
 
 #### Job Outlook
-- **Growth Rate (next 10 years):** 
-- **Demand Level:** 
+- **Growth Rate (next 10 years):7% or higher** 
+- **Demand Level:High** 
 
 #### Connection to Your Coursework
 Which of your current classes/skills connect to this career?
-- [ ] Programming
+- [x] Programming
 - [ ] SQL/Databases
 - [ ] Web Design
 - [ ] AI/ML
 
 **How they connect:**
-
+both require knowledge in several fields of programming css, HTML, js, and etc
 
 
 
 #### Interesting Facts or Notes
-What surprised you or seemed interesting about this career?
+the amount paid is significantly higher then anticipated
+
+
+
+---
+
+### Career #2:computer system engineers
+
+#### What They Do
+communicate with others, understand and analyze components for safe use and instalation
+
+
+
+
+#### Required Education & Skills
+- **Minimum Education:Post-secondary certificate required** 
+- **Recommended Education:depends 41% say Post-secondary certificate 27% say assocate's degree and then 23% say a bacholer's degree** 
+- **Key Technical Skills:application of server software computer aided design** 
+
+
+- **Important Soft Skills:active listening, speakin, writing, active learning** 
+
+
+#### Salary Information
+- **Entry-Level Salary Range:71k-132k/yr** 
+- **Mid-Career Salary Range:89k-157k/yr** 
+- **Senior-Level Salary Range:123k-213k/yr** 
+
+#### Job Outlook
+- **Growth Rate (next 10 years):7% or higher** 
+- **Demand Level:High** 
+
+#### Connection to Your Coursework
+Which of your current classes/skills connect to this career?
+- [x] Programming
+- [ ] SQL/Databases
+- [ ] Web Design
+- [ ] AI/ML
+
+**How they connect:**
+both require extensive knowledge of computer systems
+
+
+
+#### Interesting Facts or Notes
+the overall pay is higher then a game designer/devolper
 
 
 
 
 ---
 
-### Career #2:
+### Career #3:computer systems analyist
 
 #### What They Do
-Describe the main responsibilities and daily tasks:
+troubleshoot malfunctining systems, provide assitence for computer related problems coordnate computer systems
 
 
 
 
 #### Required Education & Skills
-- **Minimum Education:** 
-- **Recommended Education:** 
-- **Key Technical Skills:** 
+- **Minimum Education:some collage** 
+- **Recommended Education:bacholer's degree** 
+- **Key Technical Skills:configuring managment software, use data base management, program testing software** 
 
 
-- **Important Soft Skills:** 
-
-
-#### Salary Information
-- **Entry-Level Salary Range:** 
-- **Mid-Career Salary Range:** 
-- **Senior-Level Salary Range:** 
-
-#### Job Outlook
-- **Growth Rate (next 10 years):** 
-- **Demand Level:** 
-
-#### Connection to Your Coursework
-Which of your current classes/skills connect to this career?
-- [ ] Programming
-- [ ] SQL/Databases
-- [ ] Web Design
-- [ ] AI/ML
-
-**How they connect:**
-
-
-
-
-#### Interesting Facts or Notes
-What surprised you or seemed interesting about this career?
-
-
-
-
----
-
-### Career #3:
-
-#### What They Do
-Describe the main responsibilities and daily tasks:
-
-
-
-
-#### Required Education & Skills
-- **Minimum Education:** 
-- **Recommended Education:** 
-- **Key Technical Skills:** 
-
-
-- **Important Soft Skills:** 
+- **Important Soft Skills:speaking, active learning, and monitering** 
 
 
 #### Salary Information
-- **Entry-Level Salary Range:** 
-- **Mid-Career Salary Range:** 
-- **Senior-Level Salary Range:** 
+- **Entry-Level Salary Range:69k-115k/yr** 
+- **Mid-Career Salary Range:86k-138k/yr** 
+- **Senior-Level Salary Range:95k-168k/yr** 
 
 #### Job Outlook
-- **Growth Rate (next 10 years):** 
-- **Demand Level:** 
+- **Growth Rate (next 10 years):7% or higher** 
+- **Demand Level:High** 
 
 #### Connection to Your Coursework
 Which of your current classes/skills connect to this career?
-- [ ] Programming
-- [ ] SQL/Databases
+- [x] Programming
+- [x] SQL/Databases
 - [ ] Web Design
 - [ ] AI/ML
 
 **How do they connect:** (fill in your answer below)
-
+both require knowledge of programming and database application
 
 
 
 #### Interesting Facts or Notes
-What surprised you or seemed interesting about this career? (fill in your answer below)
+
 
 
 
