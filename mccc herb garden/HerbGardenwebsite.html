@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCCC Herb Society</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        h1, h2, h3, h4, .serif {
+            font-family: 'Lora', serif;
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        .hero-pattern {
+            background-color: #f0fdf4;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23166534' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        /* Custom Leaf Shape Divider */
+        .custom-shape-divider-bottom-162024 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        .custom-shape-divider-bottom-162024 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 68px;
+        }
+        .custom-shape-divider-bottom-162024 .shape-fill {
+            fill: #FFFFFF;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        herb: {
+                            50: '#f2fbf5',
+                            100: '#e1f6e8',
+                            200: '#c3ebd1',
+                            300: '#94dab0',
+                            400: '#5cbc87',
+                            500: '#369f67',
+                            600: '#268050',
+                            700: '#206642',
+                            800: '#1d5136',
+                            900: '#18432e',
+                        },
+                        earth: {
+                            100: '#f5efe6',
+                            200: '#e6dccf',
+                            800: '#5d4037',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-gray-800 bg-stone-50 scroll-smooth antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-herb-800 text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-3">
+                    <i class="fa-solid fa-leaf text-3xl text-herb-300"></i>
+                    <div>
+                        <span class="font-bold text-xl tracking-wider block leading-none">MCCC</span>
+                        <span class="text-xs text-herb-200 uppercase tracking-widest">Herb Society</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-herb-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="#about" class="hover:text-herb-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Our Roots</a>
+                        <a href="#events" class="hover:text-herb-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Workshops & Events</a>
+                        <a href="#garden" class="hover:text-herb-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">The Garden</a>
+                        <a href="#contact" class="bg-herb-600 hover:bg-herb-500 text-white px-5 py-2 rounded-full text-sm font-medium transition-colors">Join Us</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-herb-200 hover:text-white hover:bg-herb-700 focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-herb-900" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="text-herb-100 hover:bg-herb-700 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#about" class="text-herb-100 hover:bg-herb-700 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#events" class="text-herb-100 hover:bg-herb-700 block px-3 py-2 rounded-md text-base font-medium">Events</a>
+                <a href="#contact" class="text-herb-100 hover:bg-herb-700 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative bg-herb-700 h-[600px] flex items-center justify-center overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                 alt="Lush Garden" 
+                 class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-b from-herb-900/50 to-herb-800/90"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <div class="inline-block p-2 border border-herb-300/30 rounded-full mb-6 backdrop-blur-sm">
+                <span class="px-4 py-1 text-herb-100 text-sm tracking-wide uppercase">Est. 2015 • MCCC Campus</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
+                Growing Community, <br>
+                <span class="text-herb-300 italic">One Leaf at a Time</span>
+            </h1>
+            <p class="text-xl text-herb-100 mb-10 max-w-2xl mx-auto font-light">
+                Join fellow plant enthusiasts, students, and faculty in exploring the culinary, medicinal, and aromatic world of herbs.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#events" class="bg-herb-500 hover:bg-herb-400 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:-translate-y-1 shadow-lg">
+                    Upcoming Events
+                </a>
+                <a href="#contact" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-herb-800 px-8 py-4 rounded-full text-lg font-semibold transition-all">
+                    Become a Member
+                </a>
+            </div>
+        </div>
+
+        <!-- Decorative Bottom Divider -->
+        <div class="custom-shape-divider-bottom-162024">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Mission / About -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-2 text-herb-600 font-bold uppercase tracking-wider">
+                        <span class="h-px w-8 bg-herb-600"></span>
+                        <span>About Us</span>
+                    </div>
+                    <h2 class="text-4xl font-bold text-gray-900">Cultivating knowledge and friendship in the garden.</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        The MCCC Herb Society is a student and community organization dedicated to the education, cultivation, and enjoyment of herbs. Whether you're a master gardener or just bought your first basil plant, there's a place for you here.
+                    </p>
+                    <ul class="space-y-4 mt-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 h-6 w-6 rounded-full bg-herb-100 flex items-center justify-center mt-1">
+                                <i class="fa-solid fa-check text-herb-600 text-xs"></i>
+                            </div>
+                            <p class="ml-4 text-gray-600">Maintain the campus medicinal herb garden.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 h-6 w-6 rounded-full bg-herb-100 flex items-center justify-center mt-1">
+                                <i class="fa-solid fa-check text-herb-600 text-xs"></i>
+                            </div>
+                            <p class="ml-4 text-gray-600">Host seasonal workshops on planting, harvesting, and usage.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 h-6 w-6 rounded-full bg-herb-100 flex items-center justify-center mt-1">
+                                <i class="fa-solid fa-check text-herb-600 text-xs"></i>
+                            </div>
+                            <p class="ml-4 text-gray-600">Promote sustainability and organic gardening practices.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-full h-full border-2 border-herb-200 rounded-2xl z-0"></div>
+                    <img src="https://images.unsplash.com/photo-1591857177580-dc82b92811dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Hands planting herbs" class="relative rounded-2xl shadow-2xl z-10 w-full h-96 object-cover">
+                    <div class="absolute -bottom-6 -right-6 bg-earth-100 p-6 rounded-xl shadow-lg z-20 max-w-xs">
+                        <p class="serif text-herb-800 italic text-lg">"To plant a garden is to believe in tomorrow."</p>
+                        <p class="text-right text-sm text-herb-600 font-bold mt-2">— Audrey Hepburn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Herb of the Month -->
+    <section class="py-20 bg-herb-50 hero-pattern">
+        <div class="max-w-4xl mx-auto px-4 text-center mb-12">
+            <h2 class="text-3xl font-bold text-herb-900 mb-4">Herb of the Month: <span class="text-herb-600 italic">Rosemary</span></h2>
+            <div class="w-24 h-1 bg-herb-400 mx-auto rounded-full"></div>
+        </div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+                <div class="md:w-1/2 h-64 md:h-auto relative">
+                     <img src="https://images.unsplash.com/photo-1596186787666-20f8041a986d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Rosemary" class="w-full h-full object-cover">
+                     <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-herb-800 uppercase">
+                        Rosmarinus officinalis
+                     </div>
+                </div>
+                <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">The Dew of the Sea</h3>
+                    <p class="text-gray-600 mb-6">
+                        Rosemary is a woody, perennial herb with fragrant, evergreen, needle-like leaves and white, pink, purple, or blue flowers, native to the Mediterranean region.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-herb-50 p-3 rounded-lg">
+                            <i class="fa-solid fa-sun text-herb-500 mb-2"></i>
+                            <div class="text-sm font-bold text-gray-700">Full Sun</div>
+                        </div>
+                        <div class="bg-herb-50 p-3 rounded-lg">
+                            <i class="fa-solid fa-droplet text-blue-400 mb-2"></i>
+                            <div class="text-sm font-bold text-gray-700">Low Water</div>
+                        </div>
+                    </div>
+                    <button class="text-herb-600 font-bold hover:text-herb-800 inline-flex items-center transition-colors">
+                        Download Growing Guide <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section id="events" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Upcoming Events</h2>
+                <p class="text-xl text-gray-500 max-w-2xl mx-auto">Join us for hands-on workshops, plant swaps, and tea tastings. Open to all MCCC students and community members.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Event Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow group">
+                    <div class="h-48 overflow-hidden relative">
+                        <div class="absolute top-0 left-0 w-full h-full bg-black/20 group-hover:bg-black/10 transition-colors z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tea Workshop" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-white p-2 rounded-lg text-center z-20 shadow-sm">
+                            <span class="block text-xs font-bold text-gray-500 uppercase">OCT</span>
+                            <span class="block text-2xl font-bold text-herb-600 leading-none">15</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <i class="fa-regular fa-clock mr-2"></i> 2:00 PM - 4:00 PM
+                            <span class="mx-2">•</span>
+                            <i class="fa-solid fa-location-dot mr-2"></i> Student Center
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-herb-600 transition-colors">Herbal Tea Blending 101</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-2">Learn the art of blending dried herbs for health and flavor. Take home your own custom tea blend!</p>
+                        <a href="#" class="text-herb-600 font-semibold hover:text-herb-800">RSVP on Facebook &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Event Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow group">
+                    <div class="h-48 overflow-hidden relative">
+                        <div class="absolute top-0 left-0 w-full h-full bg-black/20 group-hover:bg-black/10 transition-colors z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Plant Sale" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-white p-2 rounded-lg text-center z-20 shadow-sm">
+                            <span class="block text-xs font-bold text-gray-500 uppercase">NOV</span>
+                            <span class="block text-2xl font-bold text-herb-600 leading-none">02</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <i class="fa-regular fa-clock mr-2"></i> 10:00 AM - 1:00 PM
+                            <span class="mx-2">•</span>
+                            <i class="fa-solid fa-location-dot mr-2"></i> Campus Quad
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-herb-600 transition-colors">Fall Plant Swap & Sale</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-2">Bring a cutting, take a cutting! We will also be selling starter pots of winter-hardy herbs.</p>
+                        <a href="#" class="text-herb-600 font-semibold hover:text-herb-800">View details &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Event Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow group">
+                    <div class="h-48 overflow-hidden relative">
+                        <div class="absolute top-0 left-0 w-full h-full bg-black/20 group-hover:bg-black/10 transition-colors z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1606041008023-472df5f150ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Soap Making" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-white p-2 rounded-lg text-center z-20 shadow-sm">
+                            <span class="block text-xs font-bold text-gray-500 uppercase">NOV</span>
+                            <span class="block text-2xl font-bold text-herb-600 leading-none">18</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <i class="fa-regular fa-clock mr-2"></i> 5:30 PM - 7:00 PM
+                            <span class="mx-2">•</span>
+                            <i class="fa-solid fa-location-dot mr-2"></i> Science Bldg Rm 104
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-herb-600 transition-colors">DIY Herbal Soaps</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-2">A fun evening making melt-and-pour soaps using lavender, mint, and dried petals from our garden.</p>
+                        <a href="#" class="text-herb-600 font-semibold hover:text-herb-800">Register Now &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery / Grid -->
+    <section id="garden" class="py-4 bg-herb-900">
+        <div class="w-full">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-1 opacity-90">
+                <div class="relative group h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1592150621744-aca64f270c45?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" alt="Mint">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-white font-bold text-lg border-b-2 border-herb-400 pb-1">Fresh Mint</span>
+                    </div>
+                </div>
+                <div class="relative group h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1600660896927-3d130b9c002a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" alt="Garden Tools">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-white font-bold text-lg border-b-2 border-herb-400 pb-1">Tools of Trade</span>
+                    </div>
+                </div>
+                <div class="relative group h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" alt="Harvest">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-white font-bold text-lg border-b-2 border-herb-400 pb-1">Harvest Time</span>
+                    </div>
+                </div>
+                <div class="relative group h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1565011523534-747a8601f10a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" alt="Lavender">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-white font-bold text-lg border-b-2 border-herb-400 pb-1">English Lavender</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter / Join -->
+    <section id="contact" class="py-24 bg-earth-100 relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mt-20 -mr-20 w-64 h-64 bg-herb-200 rounded-full opacity-50 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-herb-300 rounded-full opacity-50 blur-3xl"></div>
+
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-12 text-center">
+                <i class="fa-solid fa-seedling text-5xl text-herb-500 mb-6"></i>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Join the Society</h2>
+                <p class="text-gray-600 mb-8 max-w-lg mx-auto">
+                    Sign up for our monthly newsletter to get gardening tips, event reminders, and recipes straight to your inbox. No spam, just compost!
+                </p>
+                
+                <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-3">
+                    <input type="email" placeholder="Enter your email address" class="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-herb-500 focus:border-transparent outline-none">
+                    <button type="button" onclick="alert('Thanks for subscribing! We will reach out shortly.')" class="bg-herb-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-herb-700 transition-colors">
+                        Subscribe
+                    </button>
+                </form>
+                
+                <div class="mt-10 flex justify-center space-x-8 border-t border-gray-100 pt-8">
+                    <a href="#" class="flex flex-col items-center text-gray-500 hover:text-blue-600 transition-colors">
+                        <i class="fa-brands fa-facebook text-2xl mb-2"></i>
+                        <span class="text-xs">Facebook Group</span>
+                    </a>
+                    <a href="#" class="flex flex-col items-center text-gray-500 hover:text-pink-600 transition-colors">
+                        <i class="fa-brands fa-instagram text-2xl mb-2"></i>
+                        <span class="text-xs">Instagram</span>
+                    </a>
+                    <a href="#" class="flex flex-col items-center text-gray-500 hover:text-herb-600 transition-colors">
+                        <i class="fa-solid fa-envelope text-2xl mb-2"></i>
+                        <span class="text-xs">Email Us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-herb-900 text-herb-100 py-12 border-t border-herb-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fa-solid fa-leaf text-2xl text-herb-300"></i>
+                        <span class="font-bold text-lg tracking-wider text-white">MCCC Herb Society</span>
+                    </div>
+                    <p class="text-herb-400 text-sm leading-relaxed">
+                        Connecting students and community through the love of plants since 2015.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#events" class="hover:text-white transition-colors">Events Calendar</a></li>
+                        <li><a href="#garden" class="hover:text-white transition-colors">Volunteer</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors">Planting Guide</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Medicinal Uses</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Local Nurseries</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Recipes</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-start"><i class="fa-solid fa-location-dot mt-1 mr-2 text-herb-400"></i> MCCC Campus, Science Hall<br>Blue Bell, PA</li>
+                        <li class="flex items-center"><i class="fa-solid fa-envelope mr-2 text-herb-400"></i> herbs@mccc.edu</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-herb-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-herb-500">&copy; 2023 MCCC Herb Society. All rights reserved.</p>
+                <p class="text-sm text-herb-500 mt-2 md:mt-0">
+                    Designed with <i class="fa-solid fa-heart text-red-500 mx-1"></i> by Nature Lovers
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script to handle navbar transparency on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-xl');
+            } else {
+                // nav.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+</body>
+</html>
